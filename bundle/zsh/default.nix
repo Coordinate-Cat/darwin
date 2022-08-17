@@ -1,11 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  home.packages = with pkgs; [ zsh ];
   programs.zsh = {
     enable = true;
-    # autocd = false;
-    # enableAutosuggestions = false;
-    # enableSyntaxHighlighting = true;
+    autocd = false;
+    enableAutosuggestions = false;
+    enableSyntaxHighlighting = true;
     history = {
       extended = true;
       path = "${config.xdg.dataHome}/zsh/.zsh_history";
@@ -16,9 +17,12 @@
       # source
       "sz" = "source ~/.zshrc";
 
-      # vim
-      # "vi" = "nvim";
-      # "vim" = "nvim";
+      # clear
+      "c" = "clear";
+
+      # vim(neovim)
+      "vi" = "nvim";
+      "vim" = "nvim";
 
       # home-manager
       "hms" = "home-manager switch";
@@ -26,13 +30,14 @@
 
       # cd
       ".." = "cd ..";
-      "home" = "cd ~";
+      "cfg" = "cd ~/.config";
       "nd" = "cd ~/.config/nixpkgs";
-      "c" = "clear";
+      "ndb" = "cd ~/.config/nixpkgs/bundle";
 
       # git
       "gc" = "git clone";
       "gd" = "git diff";
+      "ga" = "git add .";
 
       # ls(exa combinations)
       "ls1" = "clear && exa -1 --icons";
@@ -47,6 +52,10 @@
       "lst" = "clear && exa -lt --icons";
     };
     initExtra = ''
+      if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ];
+        then . $HOME/.nix-profile/etc/profile.d/nix.sh;
+      fi
+
       # custom cd(ls after cd)
       function cd() {
         builtin cd "$@" && clear && exa -la --icons
