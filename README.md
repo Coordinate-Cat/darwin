@@ -9,11 +9,6 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 Intel Iris Plus Graphics 640 1536MB
 ```
 
-## Non-automatable applications
-1. Code  
-https://code.visualstudio.com/
-
-
 ## Nix
 https://youtu.be/1dzgVkgQ5mE
 
