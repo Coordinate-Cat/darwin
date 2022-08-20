@@ -12,8 +12,9 @@
   };
 
   imports = [
-    #iterm2
+    # terminal
     ./bundle/iterm2
+    ./bundle/alacritty
 
     # vim
     ./bundle/neovim
@@ -27,6 +28,7 @@
     ./bundle/exa
     ./bundle/gitui
     ./bundle/imgcat
+    ./bundle/neofetch
 
     # shell
     ./bundle/shell
