@@ -23,6 +23,7 @@ shellAliases = {
   "ndb" = "cd ~/.config/nixpkgs/bundle";
 
   # git
+  "gu" = "gitui";
   "gc" = "git clone";
   "gd" = "git diff";
   "ga" = "git add .";
@@ -40,7 +41,7 @@ shellAliases = {
   "lst" = "clear && exa -lt --icons";
 
   # imgcat
-  "img" = "img";
+  "img" = "imgcat";
 };
 in
 {

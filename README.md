@@ -23,3 +23,12 @@ Intel Iris Plus Graphics 640 1536MB
 3. `pbcopy < ~/.ssh/github.pub`
 4. `ssh-add ~/.ssh/github`
 5. `ssh -T git@github.com`
+
+## fig
+
+1. https://fig.io/
+
+## Wallpaper
+
+1. https://unsplash.com/photos/jwTvCQQJXh0
+2. `./bundle/wallpaper`

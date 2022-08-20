@@ -29,6 +29,7 @@
     ./bundle/gitui
     ./bundle/imgcat
     ./bundle/neofetch
+    ./bundle/btop
 
     # shell
     ./bundle/shell
