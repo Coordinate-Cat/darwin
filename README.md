@@ -10,9 +10,16 @@ Intel Iris Plus Graphics 640 1536MB
 ```
 
 ## Nix
-https://youtu.be/1dzgVkgQ5mE
 
 1. https://nixos.org/
 2. `sh <(curl -L https://nixos.org/nix/install)`
-3. quit Terminal
+3. Quit Terminal
 4. `nix-shell -p nix-info --run "nix-info -m"`
+
+## Gitui
+
+1. `ssh-keygen -t ecdsa -C "example@gmail.com"`
+2. Type `github` in the first question.
+3. `pbcopy < ~/.ssh/github.pub`
+4. `ssh-add ~/.ssh/github`
+5. `ssh -T git@github.com`

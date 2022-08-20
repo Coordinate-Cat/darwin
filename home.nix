@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.home-manager.enable = true;
@@ -12,6 +12,9 @@
   };
 
   imports = [
+    #iterm2
+    ./bundle/iterm2
+
     # vim
     ./bundle/neovim
 
@@ -19,12 +22,14 @@
     ./bundle/git
 
     # commands
+    ./bundle/fzf
     ./bundle/bat
     ./bundle/exa
     ./bundle/gitui
+    ./bundle/imgcat
 
     # shell
-    ./bundle/zsh
+    ./bundle/shell
     ./bundle/starship
 
     # font
