@@ -72,6 +72,20 @@ ssh -T git@github.com
 Settings > Dotfiles > ⋮ > Import Dotfiles
 
 ## Wallpaper [[&#10697;](https://unsplash.com/photos/jwTvCQQJXh0)]
-TODO: default command?
-
+~~TODO: default command?~~
+```
+osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"~/.config/nixpkgs/bundle/wallpaper/wallpaper.jpg\" as POSIX file"
+```
 `./bundle/wallpaper`
+
+## Reddit [[&#10697;](#)]
+
+Standby...
+
+## Article [[&#10697;](https://lmh.vercel.app/)]
+
+https://lmh.vercel.app/
+
+## Licence [[&#10697;](https://github.com/Coordinate-Cat/darwin/blob/main/LICENSE)]
+
+<img width="100px" src="https://user-images.githubusercontent.com/42393004/185775910-4b7f91d9-c65f-4a2f-a805-9abea15d1fe0.png">
