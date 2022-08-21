@@ -1,6 +1,7 @@
 # darwin
-darwin(macos) setup
+This repository is darwin(macos) setup
 
+## Hacking Machine
 ```
 macOS Monterey ver 12.5
 MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
@@ -41,6 +42,23 @@ darwin-rebuild switch
 
 ## Gitui [[&#10697;](https://github.com/extrawurst/gitui)]
 
+make config file
+```
+mkdir ~/.ssh 
+cd ~/.ssh
+touch config
+vim config
+```
+
+write config
+```
+Host github github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github
+```
+
+make ssh-key
 ```
 ssh-keygen -t ecdsa -C "example@gmail.com"
 Type `github` in the first question
