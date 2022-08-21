@@ -9,26 +9,51 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 Intel Iris Plus Graphics 640 1536MB
 ```
 
-## Nix
+## Nix [[&#10697;](https://nixos.org/)]
 
-1. https://nixos.org/
-2. `sh <(curl -L https://nixos.org/nix/install)`
-3. Quit Terminal
-4. `nix-shell -p nix-info --run "nix-info -m"`
+```
+sh <(curl -L https://nixos.org/nix/install)
 
-## Gitui
+Quit Terminal
 
-1. `ssh-keygen -t ecdsa -C "example@gmail.com"`
-2. Type `github` in the first question.
-3. `pbcopy < ~/.ssh/github.pub`
-4. `ssh-add ~/.ssh/github`
-5. `ssh -T git@github.com`
+nix-shell -p nix-info --run "nix-info -m"
+```
+## Home-manager [[&#10697;](https://github.com/nix-community/home-manager)]
 
-## fig
+```
+nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+nix-channel --update
+export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
+nix-shell '<home-manager>' -A install
+```
 
-1. https://fig.io/
+## Nix-Darwin [[&#10697;](https://github.com/LnL7/nix-darwin)]
 
-## Wallpaper
+```
+mkdir ~/.nixpkgs
+ln -s ~/.config/nixpkgs/darwin-configuration.nix $HOME/.nixpkgs/darwin-configuration.nix
 
-1. https://unsplash.com/photos/jwTvCQQJXh0
-2. `./bundle/wallpaper`
+nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
+./result/bin/darwin-installer
+
+darwin-rebuild switch
+```
+
+## Gitui [[&#10697;](https://github.com/extrawurst/gitui)]
+
+```
+ssh-keygen -t ecdsa -C "example@gmail.com"
+Type `github` in the first question
+pbcopy < ~/.ssh/github.pub
+ssh-add ~/.ssh/github
+ssh -T git@github.com
+```
+
+## Fig [[&#10697;](https://fig.io/)]
+
+Settings > Dotfiles > ⋮ > Import Dotfiles
+
+## Wallpaper [[&#10697;](https://unsplash.com/photos/jwTvCQQJXh0)]
+TODO: default command?
+
+`./bundle/wallpaper`
