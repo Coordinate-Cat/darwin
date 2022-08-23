@@ -30,6 +30,11 @@ nix-shell '<home-manager>' -A install
 
 ## Nix-Darwin [[&#10697;](https://github.com/LnL7/nix-darwin)]
 
+> **Warning**  
+> https://github.com/LnL7/nix-darwin/issues/188
+
+idk yet
+
 ```
 mkdir ~/.nixpkgs
 ln -s ~/.config/nixpkgs/darwin-configuration.nix $HOME/.nixpkgs/darwin-configuration.nix
