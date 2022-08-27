@@ -19,6 +19,20 @@ Quit Terminal
 
 nix-shell -p nix-info --run "nix-info -m"
 ```
+
+### Error 
+Error when doing `sh <(curl -L https://nixos.org/nix/install)`
+```
+error: failed to bootstrap /nix If you enabled FileVault after booting, this is likely a known issue
+with macOS that you'll have to reboot to fix. If you didn't enable FV,
+though, please open an issue describing how the system that you see
+this error on was set up.
+```
+
+solution
+1. mac system settings > security and privacy > Filevault on/off > mac reboot
+
+
 ## Home-manager [[&#10697;](https://github.com/nix-community/home-manager)]
 
 ```
