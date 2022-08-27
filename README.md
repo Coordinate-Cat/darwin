@@ -36,27 +36,16 @@ solution
 ## Home-manager [[&#10697;](https://github.com/nix-community/home-manager)]
 
 ```
+# home-manager
 nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
+
+# nixpkgs
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+nix-channel --update
+
 export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
 nix-shell '<home-manager>' -A install
-```
-
-## Nix-Darwin [[&#10697;](https://github.com/LnL7/nix-darwin)]
-
-> **Warning**  
-> https://github.com/LnL7/nix-darwin/issues/188
-
-idk yet
-
-```
-mkdir ~/.nixpkgs
-ln -s ~/.config/nixpkgs/darwin-configuration.nix $HOME/.nixpkgs/darwin-configuration.nix
-
-nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
-./result/bin/darwin-installer
-
-darwin-rebuild switch
 ```
 
 ## Gitui [[&#10697;](https://github.com/extrawurst/gitui)]
@@ -86,12 +75,39 @@ ssh-add ~/.ssh/github
 ssh -T git@github.com
 ```
 
+## Install this repository
+```
+cd ~/.config
+rm -rf nixpkgs
+git clone git@github.com:Coordinate-Cat/darwin.git nixpkgs
+
+home-manager switch
+source ~/.zshrc
+```
+
+## ~~Nix-Darwin [[&#10697;](https://github.com/LnL7/nix-darwin)]~~
+
+> **Warning**  
+> https://github.com/LnL7/nix-darwin/issues/188
+
+idk yet
+
+```
+mkdir ~/.nixpkgs
+ln -s ~/.config/nixpkgs/darwin-configuration.nix $HOME/.nixpkgs/darwin-configuration.nix
+
+nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
+./result/bin/darwin-installer
+
+darwin-rebuild switch
+```
+
 ## Fig [[&#10697;](https://fig.io/)]
 
 Settings > Dotfiles > ⋮ > Import Dotfiles
 
 ## Wallpaper [[&#10697;](https://unsplash.com/photos/jwTvCQQJXh0)]
-~~TODO: default command?~~
+
 ```
 osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"~/.config/nixpkgs/bundle/wallpaper/wallpaper.jpg\" as POSIX file"
 ```
