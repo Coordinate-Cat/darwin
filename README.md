@@ -102,9 +102,14 @@ nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
 darwin-rebuild switch
 ```
 
+## iTerm [[&#10697;](https://iterm2.com/)]
+
+Theme: [Everforest hard dark](https://github.com/Coordinate-Cat/darwin/blob/main/bundle/iterm2/Everforest_hard_dark.itermcolors)
+
+
 ## Rectangle [[&#10697;](https://rectangleapp.com/)]
 
-margin: 24px
+margin: `24px`
 
 ## Fig [[&#10697;](https://fig.io/)]
 
