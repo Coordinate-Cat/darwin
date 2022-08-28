@@ -102,6 +102,10 @@ nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
 darwin-rebuild switch
 ```
 
+## Rectangle [[&#10697;](https://rectangleapp.com/)]
+
+margin: 24px
+
 ## Fig [[&#10697;](https://fig.io/)]
 
 Settings > Dotfiles > ⋮ > Import Dotfiles
