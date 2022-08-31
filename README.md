@@ -106,10 +106,18 @@ darwin-rebuild switch
 
 Theme: [Everforest hard dark](https://github.com/Coordinate-Cat/darwin/blob/main/bundle/iterm2/Everforest_hard_dark.itermcolors)
 
+## VSCode [[&#10697;](https://code.visualstudio.com/)]
+
+Theme: [Dark Hard High-Contrast](https://github.com/sainnhe/everforest-vscode)
+
+|Extensions|URL|
+|:-|:-|
+|Nix|https://marketplace.visualstudio.com/items?itemName=bbenoist.Nix|
+|Everforest|https://marketplace.visualstudio.com/items?itemName=sainnhe.everforest|
 
 ## Rectangle [[&#10697;](https://rectangleapp.com/)]
 
-margin: `24px`
+margin: `20px`
 
 ## Fig [[&#10697;](https://fig.io/)]
 
