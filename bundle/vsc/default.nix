@@ -31,6 +31,7 @@
 
       # editor
       "editor.tabSize" = 2;
+      "editor.minimap.enabled" = false;
 
       # workbench
       "workbench.tree.indent" = 8;
