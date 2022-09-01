@@ -16,7 +16,8 @@
     ./bundle/iterm2
     ./bundle/alacritty
 
-    # vim
+    # editor
+    ./bundle/vsc
     ./bundle/neovim
 
     # git
