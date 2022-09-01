@@ -8,18 +8,20 @@
       bbenoist.nix
       ms-ceintl.vscode-language-pack-ja
       svelte.svelte-vscode
+    ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      {
+        # https://www.vsixhub.com/vsix/57230/
+        name = "everforest";
+        publisher = "sainnhe";
+        version = "0.2.1";
+        sha256 = "836ce947ed4ff7d5a1524fc0151fc8628c49c123e88422db09cdf9708dab80be";
+      }
     ];
-    # ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-    #   {
-    #     name = "everforest-vscode";
-    #     publisher = "sainnhe";
-    #     version = "0.2.1";
-    #     sha256 = "1l6qa80236alcjnjbg6qgfcs68j98rqw0v1vbfnq4bhscfzqs30p";
-    #   }
-    # ];
     userSettings = {
+      # font
       "terminal.integrated.fontFamily" = "Hack Nerd Font";
 
+      # theme
       "workbench.colorTheme" = "Everforest Dark";
       "everforest.darkContrast" = "hard";
       "everforest.darkCursor" = "orange";
@@ -27,8 +29,13 @@
       "everforest.darkWorkbench" = "high-contrast";
       "everforest.highContrast" = true;
 
+      # editor
       "editor.tabSize" = 2;
+
+      # workbench
       "workbench.tree.indent" = 8;
+
+      # security
       "security.workspace.trust.untrustedFiles" = "open";
     };
   };
