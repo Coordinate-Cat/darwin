@@ -8,6 +8,9 @@
       bbenoist.nix
       ms-ceintl.vscode-language-pack-ja
       svelte.svelte-vscode
+
+      # default installed extensions
+      # github.copilot
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         # https://www.vsixhub.com/vsix/57230/
@@ -38,6 +41,15 @@
 
       # security
       "security.workspace.trust.untrustedFiles" = "open";
+
+      # copilot
+      # "enable-proposed-api" = ["github.copilot"];
+      # "github.copilot.enable" = {
+      #   "*" = true;
+      #   "yaml" = false;
+      #   "plaintext" = false;
+      #   "markdown" = false;
+      # };
     };
   };
 }

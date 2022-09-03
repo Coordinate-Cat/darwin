@@ -66,10 +66,21 @@ in
         then . $HOME/.nix-profile/etc/profile.d/nix.sh;
       fi
 
+      # hyperfine
+      function hf() {
+        hyperfine --warmup 1 'home-manager switch' \
+        'home-manager packages' \
+        'home-manager news' \
+        --export-markdown benchmark.md
+
+        cat README.md benchmark.md > README.md
+      }
+
       # custom cd(ls after cd)
       function cd() {
         builtin cd "$@" && clear && exa -la --icons
       }
+
       alias cd="cd"
     '';
   };

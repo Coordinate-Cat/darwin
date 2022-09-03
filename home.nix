@@ -31,6 +31,7 @@
     ./bundle/imgcat
     ./bundle/neofetch
     ./bundle/btop
+    ./bundle/hyperfine
 
     # shell
     ./bundle/shell
