@@ -2,8 +2,10 @@
 This repository is darwin(macos) setup
 
 ## Hacking Machine
+<img width="504" alt="neofetch" src="https://user-images.githubusercontent.com/42393004/188252680-e1acaf9b-fdf3-4d36-bb16-7516191da5d3.png">
+
 ```
-macOS Monterey ver 12.5
+macOS Monterey ver 12.5.1
 MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 2.3GHz DualCore IntelCore i5
 16GB 2133 MHz LPDDR3

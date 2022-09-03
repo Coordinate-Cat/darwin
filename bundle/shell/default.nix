@@ -42,6 +42,9 @@ shellAliases = {
 
   # imgcat
   "img" = "imgcat";
+
+  # neofetch
+  "neo" = "clear && neofetch --source ~/.config/nixpkgs/bundle/neofetch/pepe.txt";
 };
 in
 {
