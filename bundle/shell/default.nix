@@ -44,7 +44,7 @@ shellAliases = {
   "img" = "imgcat";
 
   # neofetch
-  "neo" = "clear && neofetch --source ~/.config/nixpkgs/bundle/neofetch/pepe.txt";
+  "neo" = "neofetch --source ~/.config/nixpkgs/bundle/neofetch/pepe.txt";
 };
 in
 {
@@ -75,8 +75,6 @@ in
         'home-manager packages' \
         'home-manager news' \
         --export-markdown benchmark.md
-
-        cat README.md benchmark.md > README.md
       }
 
       # custom cd(ls after cd)

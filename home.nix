@@ -23,7 +23,11 @@
     # git
     ./bundle/git
 
+    # node
+    ./bundle/node
+
     # commands
+    ./bundle/fnm
     ./bundle/fzf
     ./bundle/bat
     ./bundle/exa
