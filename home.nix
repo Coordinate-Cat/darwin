@@ -14,11 +14,12 @@
   imports = [
     # terminal
     ./bundle/iterm2
+    ./bundle/wezterm
     ./bundle/alacritty
 
     # editor
-    ./bundle/vsc
     ./bundle/neovim
+    ./bundle/vscode
 
     # git
     ./bundle/git
@@ -27,14 +28,14 @@
     ./bundle/node
 
     # commands
-    ./bundle/fnm
-    ./bundle/fzf
     ./bundle/bat
     ./bundle/exa
+    ./bundle/fnm
+    ./bundle/fzf
+    ./bundle/btop
     ./bundle/gitui
     ./bundle/imgcat
     ./bundle/neofetch
-    ./bundle/btop
     ./bundle/hyperfine
 
     # shell

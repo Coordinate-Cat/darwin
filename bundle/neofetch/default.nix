@@ -70,13 +70,11 @@
   mpc_args=()
   colors=(distro)
 
-
   # Text Options
   bold="on"
   underline_enabled="on"
-  underline_char="---"
+  underline_char="_"
   separator=":"
-
 
   # Color Blocks
   block_range=(0 15)
