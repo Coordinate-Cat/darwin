@@ -30,6 +30,7 @@
     # commands
     ./bundle/bat
     ./bundle/exa
+    ./bundle/duf
     ./bundle/fnm
     ./bundle/fzf
     ./bundle/btop
