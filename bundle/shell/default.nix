@@ -83,6 +83,9 @@ in
       }
 
       alias cd="cd"
+
+      # fnm
+      eval "$(fnm env --use-on-cd)"
     '';
   };
 }

@@ -22,7 +22,7 @@ Quit Terminal
 nix-shell -p nix-info --run "nix-info -m"
 ```
 
-### Error 
+### Error
 Error when doing `sh <(curl -L https://nixos.org/nix/install)`
 ```
 error: failed to bootstrap /nix If you enabled FileVault after booting, this is likely a known issue

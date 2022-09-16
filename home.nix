@@ -14,7 +14,7 @@
   imports = [
     # terminal
     ./bundle/iterm2
-    ./bundle/wezterm
+    # ./bundle/wezterm
     ./bundle/alacritty
 
     # editor

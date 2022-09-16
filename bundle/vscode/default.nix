@@ -57,32 +57,38 @@
       # }
     ];
     userSettings = {
-      # font
+      # terminal
       "terminal.integrated.fontFamily" = "Hack Nerd Font";
+      "terminal.external.osxExec" = "iTerm.app";
+      "terminal.integrated.shellIntegration.decorationsEnabled" = "never";
+
+      # workbench
+      "workbench.tree.indent" = 8;
+      "workbench.colorTheme" = "Everforest Dark";
+      "workbench.iconTheme" = "gruvbox-material-icon-theme";
 
       # theme
-      "workbench.colorTheme" = "Everforest Dark";
+      "everforest.highContrast" = true;
       "everforest.darkContrast" = "hard";
       "everforest.darkCursor" = "orange";
       "everforest.darkSelection" = "orange";
       "everforest.darkWorkbench" = "high-contrast";
-      "everforest.highContrast" = true;
-      "workbench.iconTheme" = "gruvbox-material-icon-theme";
 
       # appearance
       "editor.tabSize" = 2;
       "editor.minimap.enabled" = false;
       "editor.inlineSuggest.enabled" = true;
       "editor.stickyScroll.enabled" = true;
+      "editor.fontLigatures" = true;
       "editor.renderWhitespace" = "boundary";
-      "workbench.tree.indent" = 8;
-      "breadcrumbs.enabled" = false;
-      "liveServer.settings.donotShowInfoMsg" = true;
-      "terminal.external.osxExec" = "iTerm.app";
-      terminal.integrated.shellIntegration.decorationsEnabled = "never";
 
       # security
       "security.workspace.trust.untrustedFiles" = "open";
+
+      # others
+      "window.zoomLevel" = 0;
+      "breadcrumbs.enabled" = false;
+      "liveServer.settings.donotShowInfoMsg" = true;
 
       # copilot
       # "enable-proposed-api" = ["github.copilot"];
