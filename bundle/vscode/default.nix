@@ -89,6 +89,9 @@
       "window.zoomLevel" = 0;
       "breadcrumbs.enabled" = false;
       "liveServer.settings.donotShowInfoMsg" = true;
+      "terminal.integrated.env.osx" = {
+        "FIG_NEW_SESSION" = "1";
+      };
 
       # copilot
       # "enable-proposed-api" = ["github.copilot"];

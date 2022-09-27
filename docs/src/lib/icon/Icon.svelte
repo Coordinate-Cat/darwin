@@ -1,0 +1,1 @@
+<i class="mi mi-clipboard-check"><span class="u-sr-only"></span></i>
