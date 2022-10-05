@@ -35,9 +35,11 @@
     ./bundle/fzf
     ./bundle/btop
     ./bundle/navi
+    ./bundle/skim
     ./bundle/hexyl
     ./bundle/gitui
     ./bundle/imgcat
+    ./bundle/ripgrep
     ./bundle/neofetch
     ./bundle/hyperfine
 

@@ -12,7 +12,7 @@ shellAliases = {
   "vim" = "nvim";
 
   # home-manager
-  "hms" = "home-manager switch";
+  "hms" = "home-manager switch && sz";
   "hmp" = "home-manager packages";
   "hmn" = "home-manager news";
 
@@ -45,6 +45,9 @@ shellAliases = {
 
   # neofetch
   "neo" = "neofetch --source ~/.config/nixpkgs/bundle/neofetch/pepe.txt";
+
+  # rg + sk
+  "bd" = "cd ~/.config/nixpkgs/bundle && rg --files | sk --preview='bat {} --color=always'";
 };
 in
 {
