@@ -1,4 +1,10 @@
 # darwin
+
+![macOS](https://img.shields.io/badge/mac%20os-000000?style=flat-square&logo=apple&color=333)
+![](https://img.shields.io/github/languages/code-size/Coordinate-Cat/darwin?color=333&style=flat-square)
+![](https://img.shields.io/tokei/lines/github/Coordinate-Cat/darwin?color=333&style=flat-square)
+![](https://img.shields.io/github/last-commit/Coordinate-Cat/darwin?color=333&style=flat-square)
+
 This repository is darwin(macos) setup
 
 ## Hacking Machine

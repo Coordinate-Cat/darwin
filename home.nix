@@ -34,6 +34,7 @@
     ./bundle/fnm
     ./bundle/fzf
     ./bundle/btop
+    ./bundle/navi
     ./bundle/hexyl
     ./bundle/gitui
     ./bundle/imgcat
