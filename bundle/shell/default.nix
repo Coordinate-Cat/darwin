@@ -80,6 +80,8 @@ in
         --export-markdown benchmark.md
       }
 
+      export DOCKER_HOST='tcp://127.0.0.1:2375'
+
       # custom cd(ls after cd)
       function cd() {
         builtin cd "$@" && clear && exa -la --icons

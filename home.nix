@@ -34,6 +34,7 @@
     ./bundle/fnm
     ./bundle/fzf
     ./bundle/btop
+    ./bundle/lima
     ./bundle/navi
     ./bundle/skim
     ./bundle/hexyl
