@@ -149,3 +149,13 @@ https://lmh.vercel.app/
 ## Licence [[&#10697;](https://github.com/Coordinate-Cat/darwin/blob/main/LICENSE)]
 
 <img width="100px" src="https://user-images.githubusercontent.com/42393004/185775910-4b7f91d9-c65f-4a2f-a805-9abea15d1fe0.png">
+
+
+## nvim
+
+```
+Command lists
+============================
+`checkhealth`
+
+```

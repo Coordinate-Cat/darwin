@@ -44,6 +44,10 @@
     ./bundle/neofetch
     ./bundle/hyperfine
 
+    # nvim plugins
+    ./bundle/treesitter
+    ./bundle/rnix
+
     # shell
     ./bundle/shell
     ./bundle/starship
