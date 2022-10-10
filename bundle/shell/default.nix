@@ -12,9 +12,15 @@ shellAliases = {
   "vim" = "nvim";
 
   # home-manager
-  "hms" = "home-manager switch && sz";
+  "hms" = "home-manager switch";
   "hmp" = "home-manager packages";
   "hmn" = "home-manager news";
+
+  # rm
+  "rm" = "rm";
+  "rmr" = "rm -rf";
+
+  "md" = "mkdir";
 
   # cd
   ".." = "cd ..";
@@ -80,8 +86,6 @@ in
         --export-markdown benchmark.md
       }
 
-      export DOCKER_HOST='tcp://127.0.0.1:2375'
-
       # custom cd(ls after cd)
       function cd() {
         builtin cd "$@" && clear && exa -la --icons
@@ -91,6 +95,12 @@ in
 
       # fnm
       eval "$(fnm env --use-on-cd)"
+
+      # cargo
+      source "$HOME/.cargo/env"
+
+      # docker
+      export DOCKER_HOST='tcp://127.0.0.1:2375'
     '';
   };
 }

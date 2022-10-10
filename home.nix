@@ -18,7 +18,7 @@
     ./bundle/alacritty
 
     # editor
-    ./bundle/neovim
+    ./bundle/nvim
     ./bundle/vscode
 
     # git
