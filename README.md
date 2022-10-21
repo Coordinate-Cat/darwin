@@ -8,7 +8,9 @@
 This repository is darwin(macos) setup
 
 ## Hacking Machine
-<img width="504" alt="neofetch" src="https://user-images.githubusercontent.com/42393004/188252680-e1acaf9b-fdf3-4d36-bb16-7516191da5d3.png">
+<img width="1440" alt="スクリーンショット 2022-10-21 23 28 15" src="https://user-images.githubusercontent.com/42393004/197219972-35b6e660-33c2-466d-bb2f-bf6701706b72.png">
+<img width="1440" alt="スクリーンショット 2022-10-21 23 25 25" src="https://user-images.githubusercontent.com/42393004/197219451-edd2456f-5e54-49d3-a0d1-e3a48c830c53.png">
+<img width="1440" alt="スクリーンショット 2022-10-21 23 34 34" src="https://user-images.githubusercontent.com/42393004/197221435-407a0569-179a-4781-b62d-50a44dee82f2.png">
 
 ```
 macOS Monterey ver 12.5.1
