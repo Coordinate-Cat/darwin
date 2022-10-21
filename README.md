@@ -62,7 +62,7 @@ nix-shell '<home-manager>' -A install
 
 make config file
 ```
-mkdir ~/.ssh 
+mkdir ~/.ssh
 cd ~/.ssh
 touch config
 vim config
