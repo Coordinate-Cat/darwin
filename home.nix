@@ -37,8 +37,10 @@
     ./bundle/lima
     ./bundle/navi
     ./bundle/skim
+    ./bundle/yarn
     ./bundle/hexyl
     ./bundle/gitui
+    ./bundle/eslint
     ./bundle/imgcat
     ./bundle/ripgrep
     ./bundle/neofetch
