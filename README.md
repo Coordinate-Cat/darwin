@@ -125,10 +125,6 @@ Theme: [Dark Hard High-Contrast](https://github.com/sainnhe/everforest-vscode)
 |Nix|https://marketplace.visualstudio.com/items?itemName=bbenoist.Nix|
 |Everforest|https://marketplace.visualstudio.com/items?itemName=sainnhe.everforest|
 
-## Rectangle [[&#10697;](https://rectangleapp.com/)]
-
-margin: `20px`
-
 ## Fig [[&#10697;](https://fig.io/)]
 
 Settings > Dotfiles > ⋮ > Import Dotfiles
@@ -139,10 +135,6 @@ Settings > Dotfiles > ⋮ > Import Dotfiles
 osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"~/.config/nixpkgs/bundle/wallpaper/wallpaper.jpg\" as POSIX file"
 ```
 `./bundle/wallpaper`
-
-## Reddit [[&#10697;](#)]
-
-Standby...
 
 ## Article [[&#10697;](https://lmh.vercel.app/)]
 
