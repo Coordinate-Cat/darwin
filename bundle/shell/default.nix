@@ -28,8 +28,11 @@ shellAliases = {
   "nd" = "cd ~/.config/nixpkgs";
   "ndb" = "cd ~/.config/nixpkgs/bundle";
 
+  # gitui bad credentials
+  "badc" = "ssh-add ~/.ssh/github \ && ssh -T git@github.com";
+
   # git
-  "gu" = "gitui";
+  "gu" = "badc || gitui";
   "gc" = "git clone";
   "gd" = "git diff";
   "ga" = "git add .";
