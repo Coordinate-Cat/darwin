@@ -1,0 +1,52 @@
+{
+  // Editor Settings
+  "editor.accessibilitySupport": "on",
+  "editor.fontLigatures": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.stickyScroll.enabled": true,
+  "editor.tabSize": 2,
+
+  // Everforest Settings
+  "everforest.darkContrast": "hard",
+  "everforest.darkCursor": "orange",
+  "everforest.darkSelection": "orange",
+  "everforest.darkWorkbench": "high-contrast",
+  "everforest.highContrast": true,
+
+  // Explorer Settings
+  "liveServer.settings.donotShowInfoMsg": true,
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Terminal settings
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+
+  // Zoom Settings
+  "window.zoomLevel": 0,
+
+  // Workbench Settings
+  "workbench.colorTheme": "Everforest Dark",
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
+  "workbench.tree.indent": 8,
+
+  // Sound settings
+  "audioCues.diffLineDeleted": "off",
+  "audioCues.diffLineInserted": "off",
+  "audioCues.lineHasBreakpoint": "off",
+  "audioCues.lineHasError": "off",
+  "audioCues.lineHasFoldedArea": "off",
+  "audioCues.lineHasInlineSuggestion": "off",
+  "audioCues.noInlayHints": "off",
+  "audioCues.notebookCellCompleted": "off",
+  "audioCues.notebookCellFailed": "off",
+  "audioCues.onDebugBreak": "off",
+  "audioCues.taskCompleted": "off",
+  "audioCues.taskFailed": "off",
+  "audioCues.terminalQuickFix": "off"
+}

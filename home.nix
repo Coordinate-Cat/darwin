@@ -19,7 +19,7 @@
 
     # editor
     ./bundle/nvim
-    ./bundle/vscode
+    # ./bundle/vscode
 
     # git
     ./bundle/git
@@ -44,6 +44,7 @@
     ./bundle/imgcat
     ./bundle/ripgrep
     ./bundle/neofetch
+    ./bundle/onefetch
     ./bundle/hyperfine
 
     # nvim plugins
