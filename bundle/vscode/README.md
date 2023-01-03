@@ -1,0 +1,10 @@
+GitHub.copilot
+intellsmi.comment-translate
+JonathanHarty.gruvbox-material-icon-theme
+MS-CEINTL.vscode-language-pack-ja
+rust-lang.rust-analyzer
+sainnhe.everforest
+shardulm94.trailing-spaces
+soerenuhrbach.vscode-deepl
+tauri-apps.tauri-vscode
+withfig.fig

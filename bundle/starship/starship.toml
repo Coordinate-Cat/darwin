@@ -2,7 +2,7 @@ add_newline = true
 scan_timeout = 10
 
 format = '''
-[✂︎](fg:#f85552)$fill$shell
+[✂︎](fg:#f39800)$fill$shell
 [┌──](fg:#35a77c)$username[─](fg:#35a77c)$directory
 [└─>](bold fg:#35a77c) '''
 
@@ -10,14 +10,14 @@ right_format = '''$character'''
 
 [fill]
 symbol = ' ─'
-style = 'fg:#f85552'
+style = 'fg:#f39800'
 
 [character]
 success_symbol = '[](cyan)'
 error_symbol = '[](red)'
 
 [shell]
-zsh_indicator = '[\[zsh mode\]](fg:#f85552)'
+zsh_indicator = '[\[zsh mode\]](fg:#f39800)'
 bash_indicator = '[\[bash mode\]](fg:#f85552)'
 disabled = false
 
