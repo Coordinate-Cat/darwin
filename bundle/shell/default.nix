@@ -49,6 +49,8 @@ shellAliases = {
   "lss" = "clear && exa -lS --icons";
   "lst" = "clear && exa -lt --icons";
 
+  "bundle" = "cd ~/.config/nixpkgs/bundle && ls > ~/.config/nixpkgs/bundle.txt";
+
   # imgcat
   "img" = "imgcat";
 

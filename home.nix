@@ -27,7 +27,7 @@
     # node
     ./bundle/node
 
-    # commands
+    # plugins
     ./bundle/bat
     ./bundle/exa
     ./bundle/duf
@@ -40,6 +40,7 @@
     ./bundle/yarn
     ./bundle/hexyl
     ./bundle/gitui
+    ./bundle/trunk
     ./bundle/eslint
     ./bundle/imgcat
     ./bundle/ripgrep
