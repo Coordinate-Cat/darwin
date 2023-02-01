@@ -42,6 +42,11 @@ this error on was set up.
 solution
 1. mac system settings > security and privacy > Filevault on/off > mac reboot
 
+## Rust
+
+```
+curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path
+```
 
 ## Home-manager [[&#10697;](https://github.com/nix-community/home-manager)]
 
