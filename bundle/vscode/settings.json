@@ -7,6 +7,22 @@
   "editor.renderWhitespace": "boundary",
   "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[tsx]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
 
   // Everforest Settings
   "everforest.darkContrast": "hard",
@@ -48,5 +64,17 @@
   "audioCues.onDebugBreak": "off",
   "audioCues.taskCompleted": "off",
   "audioCues.taskFailed": "off",
-  "audioCues.terminalQuickFix": "off"
+  "audioCues.terminalQuickFix": "off",
+
+  // ESLint settings
+  "eslint.alwaysShowStatus": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "files.insertFinalNewline": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  }
 }
