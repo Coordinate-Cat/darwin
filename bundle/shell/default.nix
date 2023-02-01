@@ -79,6 +79,8 @@ in
       size = 1000000;
     };
     initExtra = ''
+      [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
       if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ];
         then . $HOME/.nix-profile/etc/profile.d/nix.sh;
       fi
@@ -103,6 +105,8 @@ in
 
       # cargo
       source "$HOME/.cargo/env"
+
+      [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
     '';
   };
 }
