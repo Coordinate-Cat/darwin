@@ -40,12 +40,13 @@
     ./bundle/yarn
     ./bundle/hexyl
     ./bundle/gitui
+    ./bundle/tauri
     ./bundle/trunk
     ./bundle/eslint
     ./bundle/imgcat
     ./bundle/ripgrep
     ./bundle/neofetch
-    ./bundle/onefetch
+    # ./bundle/onefetch
     ./bundle/hyperfine
 
     # nvim plugins
