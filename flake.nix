@@ -1,41 +1,43 @@
 {
-  description = "My Home-Manager configuration";
+  description = "My Home Manager configuration";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-21.05-darwin";
     home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, home-manager }:
     let
-      system = "darwin-arm64";
-      pkgs = import nixpkgs {
-        inherit system;
+      # Home Manager の設定を定義する
+      homeConfigurations = {
+        # ユーザー名として使用する任意の文字列を指定する
+        okakoki = self.home-manager.lib.homeManagerConfiguration {
+          # Home Manager の設定ファイルの場所を指定する
+          config = ./home.nix;
+        };
       };
     in {
-      nixConfigurations = {
-        my-config = pkgs.lib.nixosSystem {
-          system = "darwin-arm64";
+      # Home Manager の activation script を定義する
+      self.home-manager.activationPackage."okakoki" =
+        let inputs = { nixpkgs = self.nixpkgs; home-manager = self.home-manager; };
+        in self.home-manager.packages.${inputs.system}.okakoki;
+
+      # Home Manager が依存するパッケージを定義する
+      packages = if self.home-manager.system == "aarch64-darwin" then {
+        darwin = self.home-manager.lib.darwinSystemPackage {
+          system = "aarch64-darwin";
           modules = [
-            {
-              # Home-Manager の設定ファイルのパスを指定する
-              home-manager.users.my-user = {
-                # ~/.config/nixpkgs/home.nix に記述した設定ファイルのパスを指定する
-                home.file = [ { source = /Users/my-user/.config/nixpkgs/home.nix; destination = ".config/nixpkgs/home.nix"; } ];
-              };
-            }
+            ./darwin-configuration.nix
           ];
-          # Home-Manager を有効にする
-          home-manager = pkgs.legacyPackages.${system}.home-manager.override {
-            # Home-Manager のバージョンを指定する
-            version = "21.05";
-            # Home-Manager の設定を有効にする
-            enable = true;
-            # Home-Manager の設定ファイルのパスを指定する
-            home.file = [ { source = /Users/my-user/.config/nixpkgs/home.nix; destination = ".config/nixpkgs/home.nix"; } ];
+          extraConfig = {
+            nix = {
+              package = self.nixpkgs;
+            };
           };
         };
+      } else {
+        # macOS 以外の場合の設定
+        # ...
       };
     };
 }
