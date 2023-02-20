@@ -24,6 +24,7 @@ rnix
 shell
 skim
 starship
+tauri
 treesitter
 trunk
 vscode
