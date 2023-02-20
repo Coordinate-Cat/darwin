@@ -16,6 +16,9 @@ shellAliases = {
   "hmp" = "home-manager packages";
   "hmn" = "home-manager news";
 
+  # nix flakes
+  "exp" = "--experimental-features 'nix-command flakes'";
+
   # rm
   "rm" = "rm";
   "rmr" = "rm -rf";
