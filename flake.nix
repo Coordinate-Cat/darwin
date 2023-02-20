@@ -11,7 +11,7 @@
       # Home Manager の設定を定義する
       homeConfigurations = {
         # ユーザー名として使用する任意の文字列を指定する
-        okakoki = self.home-manager.lib.homeManagerConfiguration {
+        okakoki = home-manager.lib.homeManagerConfiguration {
           # Home Manager の設定ファイルの場所を指定する
           config = ./home.nix;
         };
@@ -24,7 +24,7 @@
 
       # Home Manager が依存するパッケージを定義する
       packages = if self.home-manager.system == "aarch64-darwin" then {
-        darwin = self.home-manager.lib.darwinSystemPackage {
+        darwin = home-manager.lib.darwinSystemPackage {
           system = "aarch64-darwin";
           modules = [
             ./darwin-configuration.nix
