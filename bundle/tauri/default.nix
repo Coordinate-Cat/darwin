@@ -1,6 +1,5 @@
 { pkgs, ...}:
 
 {
-  home.packages = with pkgs; [ yarn ];
+  home.packages = with pkgs; [ cargo-tauri ];
 }
-

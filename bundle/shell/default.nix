@@ -48,6 +48,7 @@ shellAliases = {
   "lsrr" = "clear && exa -R --icons";
   "lss" = "clear && exa -lS --icons";
   "lst" = "clear && exa -lt --icons";
+  "fls" = "ls -R | grep ':$' | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'";
 
   "bundle" = "cd ~/.config/nixpkgs/bundle && ls > ~/.config/nixpkgs/bundle.txt";
 

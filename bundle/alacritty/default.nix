@@ -9,6 +9,18 @@
         decorations = "buttonless";
         opacity = 0.8;
         history = 10000;
+        dimensions = {
+          columns = 300;
+          lines = 20;
+        };
+        # vertical_chars = 50;
+        # horizontal_chars = 200;
+        position = {
+          x = 0;
+          y = 0;
+        };
+        # starting_x_offset = 0;
+        # starting_y_offset = 0;
       };
       font = {
         normal.family = "Hack Nerd Font";

@@ -42,8 +42,12 @@
     ./bundle/gitui
     ./bundle/tauri
     ./bundle/trunk
+    ./bundle/clippy
+    # ./bundle/docker
     ./bundle/eslint
     ./bundle/imgcat
+    ./bundle/newman
+    ./bundle/mysql80
     ./bundle/ripgrep
     ./bundle/neofetch
     # ./bundle/onefetch
