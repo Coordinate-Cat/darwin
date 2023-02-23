@@ -28,6 +28,7 @@
     ./bundle/node
 
     # plugins
+    ./bundle/act
     ./bundle/bat
     ./bundle/exa
     ./bundle/duf
@@ -42,12 +43,12 @@
     ./bundle/gitui
     ./bundle/tauri
     ./bundle/trunk
-    ./bundle/clippy
+    # ./bundle/clippy
     # ./bundle/docker
     ./bundle/eslint
     ./bundle/imgcat
-    ./bundle/newman
-    ./bundle/mysql80
+    # ./bundle/newman
+    # ./bundle/mysql80
     ./bundle/ripgrep
     ./bundle/neofetch
     # ./bundle/onefetch
